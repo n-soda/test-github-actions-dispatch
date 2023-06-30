@@ -1,0 +1,18 @@
+name: test-2
+
+on:
+
+  repository_dispatch:
+    types: [test-2]
+
+jobs:
+
+  run-test:
+
+    steps:
+
+      - name: run test 2 (FAIL)
+        run: |
+          set -x
+          echo run test 2
+          exit 1
