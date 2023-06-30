@@ -16,4 +16,4 @@ jobs:
       - name: test dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          event-type: ${{ test }}
+          event-type: ${{ matrix.test }}
